@@ -1,12 +1,8 @@
 # python-project-lvl1
 
----
-
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 This repository represents a simple game called Brain Games as an educational project on Hexlet.
-
----
 
 ### Links
 

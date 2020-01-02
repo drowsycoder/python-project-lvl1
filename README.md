@@ -2,6 +2,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/bca90cd3d69b3c246e45/maintainability)](https://codeclimate.com/github/drowsycoder/python-project-lvl1/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/bca90cd3d69b3c246e45/test_coverage)](https://codeclimate.com/github/drowsycoder/python-project-lvl1/test_coverage)
+[![Build Status](https://travis-ci.org/drowsycoder/python-project-lvl1.svg?branch=master)](https://travis-ci.org/drowsycoder/python-project-lvl1)
 
 ##
 This repository represents a simple game called Brain Games as an educational project on Hexlet.

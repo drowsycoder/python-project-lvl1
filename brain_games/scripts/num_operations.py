@@ -56,4 +56,3 @@ def is_even(number):
 def is_even_expected_answer(number):
     expected_answer = 'yes' if is_even(number) else 'no'
     return expected_answer
-

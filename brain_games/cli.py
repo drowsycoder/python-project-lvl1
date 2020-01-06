@@ -10,12 +10,12 @@ def run():
 
 def define_game_conditions(game_type):
     if game_type == "game_even":
-        game_conditions = 'Answer \'yes\' if number is even otherwise answer \'no\'.\n'
+        conditions = "Answer 'yes' if number is even otherwise answer 'no'.\n"
     elif game_type == "game_calc":
-        game_conditions = 'What is the result of the expression?\n'
+        conditions = 'What is the result of the expression?\n'
     else:
-        game_conditions = 'Unknown error with defining game conditions.'
-    return game_conditions
+        conditions = 'Unknown error with defining game conditions.'
+    return conditions
 
 
 def greet_and_print_conditions_and_ask_name(game_type):
@@ -44,7 +44,7 @@ def react_to_answer(is_answer_correct, user_answer, expected_answer, name):
         print('Correct!')
     else:
         print(f'\'{user_answer}\' is wrong answer ;(. ' +
-          f'Correct answer is \'{expected_answer}\'.')
+              f'Correct answer is \'{expected_answer}\'.')
         print(f'Let\'s try again, {name}!')
 
 
@@ -54,7 +54,7 @@ def congratulate_winner(name):
 
 def process_answer(user_answer, expected_answer, name):
     game_continues = True
-    
+
     if str(user_answer) == str(expected_answer):
         is_answer_correct = True
         react_to_answer(is_answer_correct, user_answer, expected_answer, name)
@@ -76,4 +76,3 @@ def iterate_game_round(game_type, name):
     user_answer = await_answer()
     game_continues = process_answer(user_answer, expected_answer, name)
     return game_continues
-

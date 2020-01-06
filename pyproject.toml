@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "drowsycoder_brain_games"
-version = "0.2.0"
+version = "0.2.1"
 description = "The Brain Games project (Hexlet)"
 authors = ["drowsycoder <drowsycoon@gmail.com>"]
 packages = [

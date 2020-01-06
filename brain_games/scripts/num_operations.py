@@ -30,6 +30,11 @@ def generate_question(game_type):
         number1, number2, operation = generate_numbers_and_operation()
         problem_text = " ".join((str(number1), operation, str(number2)))
         expected_answer = make_calculation(number1, number2, operation)
+    elif game_type == "game_gcd":
+        number1 = get_new_random_number()
+        number2 = get_new_random_number()
+        problem_text = " ".join((str(number1), str(number2)))
+        expected_answer = calculate_gcd(number1, number2)
     else:
         problem_text = 'Unknown error with defining a text of a problem.'
         expected_answer = 'Unknown error with defining an expected answer.'
@@ -47,6 +52,18 @@ def make_calculation(number1, number2, operation):
         print('Unknown error with defining a result of an operation.')
         return "The result was not calculated by the program."
     return result
+
+
+def calculate_gcd(number1, number2):
+    a = int(number1)
+    b = int(number2)
+    while a != 0 and b != 0:
+        if a > b:
+            a %= b
+        else:
+            b %= a
+    gcd = a + b
+    return gcd
 
 
 def is_even(number):

@@ -13,6 +13,8 @@ def define_game_conditions(game_type):
         conditions = "Answer 'yes' if number is even otherwise answer 'no'.\n"
     elif game_type == "game_calc":
         conditions = 'What is the result of the expression?\n'
+    elif game_type == "game_gcd":
+        conditions = "Find the greatest common divisor of given numbers.\n"
     else:
         conditions = 'Unknown error with defining game conditions.'
     return conditions

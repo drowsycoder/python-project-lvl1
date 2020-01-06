@@ -1,10 +1,10 @@
 # !/usr/bin/env python3
 
-from cli import run
+import brain_games.cli as cli
 
 
 def main():
-    run()
+    cli.run()
 
 
 TOTAL_QUESTIONS = 3

@@ -9,7 +9,7 @@ def get_new_random_number():
 
 
 def get_new_random_operation():
-    math_operations = ['+', '-', '*']
+    math_operations = ["+", "-", "*"]
     operation = random.choice(math_operations)
     return operation
 
@@ -36,20 +36,20 @@ def generate_question(game_type):
         problem_text = " ".join((str(number1), str(number2)))
         expected_answer = calculate_gcd(number1, number2)
     else:
-        problem_text = 'Unknown error with defining a text of a problem.'
-        expected_answer = 'Unknown error with defining an expected answer.'
+        problem_text = "Unknown error with defining a text of a problem."
+        expected_answer = "Unknown error with defining an expected answer."
     return problem_text, expected_answer
 
 
 def make_calculation(number1, number2, operation):
-    if operation == '+':
+    if operation == "+":
         result = number1 + number2
-    elif operation == '-':
+    elif operation == "-":
         result = number1 - number2
-    elif operation == '*':
+    elif operation == "*":
         result = number1 * number2
     else:
-        print('Unknown error with defining a result of an operation.')
+        print("Unknown error with defining a result of an operation.")
         return "The result was not calculated by the program."
     return result
 
@@ -71,5 +71,5 @@ def is_even(number):
 
 
 def is_even_expected_answer(number):
-    expected_answer = 'yes' if is_even(number) else 'no'
+    expected_answer = "yes" if is_even(number) else "no"
     return expected_answer

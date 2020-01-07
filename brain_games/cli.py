@@ -5,18 +5,19 @@ import brain_games.scripts.num_operations as num
 
 
 def run():
-    print('Welcome to the Brain Games!')
+    print("Welcome to the Brain Games!")
 
 
 def define_game_conditions(game_type):
     if game_type == "game_even":
-        conditions = "Answer 'yes' if number is even otherwise answer 'no'.\n"
+        conditions = "Answer 'yes' if number is even otherwise answer 'no'."
     elif game_type == "game_calc":
-        conditions = 'What is the result of the expression?\n'
+        conditions = "What is the result of the expression?"
     elif game_type == "game_gcd":
-        conditions = "Find the greatest common divisor of given numbers.\n"
+        conditions = "Find the greatest common divisor of given numbers."
     else:
-        conditions = 'Unknown error with defining game conditions.'
+        conditions = "Unknown error with defining game conditions."
+    conditions = conditions + "\n"
     return conditions
 
 
@@ -25,33 +26,33 @@ def greet_and_print_conditions_and_ask_name(game_type):
     game_conditions = define_game_conditions(game_type)
     print(game_conditions)
 
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!\n')
+    name = prompt.string("May I have your name? ")
+    print(f"Hello, {name}!\n")
     return name
 
 
 def generate_and_print_problem_to_solve(game_type):
     problem_text, expected_answer = num.generate_question(game_type)
-    print('Question:', problem_text)
+    print("Question:", problem_text)
     return expected_answer
 
 
 def await_answer():
-    user_answer = prompt.string('Your answer: ').strip()
+    user_answer = prompt.string("Your answer: ").strip()
     return user_answer
 
 
 def react_to_answer(is_answer_correct, user_answer, expected_answer, name):
     if is_answer_correct:
-        print('Correct!')
+        print("Correct!")
     else:
-        print(f'\'{user_answer}\' is wrong answer ;(. ' +
-              f'Correct answer is \'{expected_answer}\'.')
-        print(f'Let\'s try again, {name}!')
+        print(f"'{user_answer}' is wrong answer ;(. " +
+              f"Correct answer is '{expected_answer}'.")
+        print(f"Let's try again, {name}!")
 
 
 def congratulate_winner(name):
-    print(f'Congratulations, {name}!')
+    print(f"Congratulations, {name}!")
 
 
 def process_answer(user_answer, expected_answer, name):

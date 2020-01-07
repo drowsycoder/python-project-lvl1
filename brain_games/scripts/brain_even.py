@@ -12,5 +12,5 @@ def main():
         game_continues = cli.iterate_game_round(game_type, name)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

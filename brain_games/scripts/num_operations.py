@@ -3,8 +3,8 @@
 import random
 
 
-def get_new_random_number():
-    number = random.randint(1, 100)
+def get_new_random_number(max_num=100):
+    number = random.randint(1, max_num)
     return number
 
 
@@ -35,6 +35,8 @@ def generate_question(game_type):
         number2 = get_new_random_number()
         problem_text = " ".join((str(number1), str(number2)))
         expected_answer = calculate_gcd(number1, number2)
+    elif game_type == "game_ar_progr":
+        problem_text, expected_answer = generate_progression_problem()
     else:
         problem_text = "Unknown error with defining a text of a problem."
         expected_answer = "Unknown error with defining an expected answer."
@@ -64,6 +66,22 @@ def calculate_gcd(number1, number2):
             b %= a
     gcd = a + b
     return gcd
+
+
+def generate_ar_progression(n_elements=10, max_first=10, max_step=10):
+    first_number = random.randint(1, max_first)
+    step = random.randint(1, max_step)
+    progression = [first_number + step * x for x in range(n_elements)]
+    return progression
+
+
+def generate_progression_problem():
+    progression = generate_ar_progression()
+    missed_element_index = random.randint(1, len(progression)) - 1
+    missed_element_value = progression[missed_element_index]
+    progression[missed_element_index] = ".."
+    progression_string = " ".join(map(str, progression))
+    return progression_string, missed_element_value
 
 
 def is_even(number):

@@ -15,6 +15,8 @@ def define_game_conditions(game_type):
         conditions = "What is the result of the expression?"
     elif game_type == "game_gcd":
         conditions = "Find the greatest common divisor of given numbers."
+    elif game_type == "game_ar_progr":
+        conditions = "What number is missing in the progression?"
     else:
         conditions = "Unknown error with defining game conditions."
     conditions = conditions + "\n"

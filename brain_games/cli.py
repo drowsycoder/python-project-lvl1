@@ -10,17 +10,19 @@ def run():
 
 def define_game_conditions(game_type):
     if game_type == "game_even":
-        conditions = "Answer 'yes' if number is even otherwise answer 'no'."
+        cond = "Answer 'yes' if number is even otherwise answer 'no'."
     elif game_type == "game_calc":
-        conditions = "What is the result of the expression?"
+        cond = "What is the result of the expression?"
     elif game_type == "game_gcd":
-        conditions = "Find the greatest common divisor of given numbers."
+        cond = "Find the greatest common divisor of given numbers."
     elif game_type == "game_ar_progr":
-        conditions = "What number is missing in the progression?"
+        cond = "What number is missing in the progression?"
+    elif game_type == "game_prime":
+        cond = "Answer 'yes' if given number is prime. Otherwise answer 'no'."
     else:
-        conditions = "Unknown error with defining game conditions."
-    conditions = conditions + "\n"
-    return conditions
+        cond = "Unknown error with defining game conditions."
+    cond = cond + "\n"
+    return cond
 
 
 def greet_and_print_conditions_and_ask_name(game_type):

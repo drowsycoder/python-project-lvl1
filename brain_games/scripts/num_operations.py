@@ -1,6 +1,7 @@
 # !/usr/bin/env python3
 
 import random
+from math import sqrt
 
 
 def get_new_random_number(max_num=100):
@@ -37,6 +38,8 @@ def generate_question(game_type):
         expected_answer = calculate_gcd(number1, number2)
     elif game_type == "game_ar_progr":
         problem_text, expected_answer = generate_progression_problem()
+    elif game_type == "game_prime":
+        problem_text, expected_answer = generate_prime_problem()
     else:
         problem_text = "Unknown error with defining a text of a problem."
         expected_answer = "Unknown error with defining an expected answer."
@@ -82,6 +85,27 @@ def generate_progression_problem():
     progression[missed_element_index] = ".."
     progression_string = " ".join(map(str, progression))
     return progression_string, missed_element_value
+
+
+def generate_prime_numbers(maximum):
+    prime_numbers = []
+    for i in range(2, maximum+1):
+        for j in prime_numbers:
+            if j > int((sqrt(i)) + 1):
+                prime_numbers.append(i)
+                break
+            if (i % j == 0):
+                break
+        else:
+            prime_numbers.append(i)
+    return prime_numbers
+
+
+def generate_prime_problem(max_num=100):
+    prime_numbers = generate_prime_numbers(max_num)
+    number = random.randint(1, max_num)
+    expected_answer = "yes" if (number in prime_numbers) else "no"
+    return number, expected_answer
 
 
 def is_even(number):

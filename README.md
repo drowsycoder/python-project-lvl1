@@ -6,7 +6,7 @@
 This repository represents a simple game called Brain Games as an educational project on Hexlet.
 ##
 ### Installation and using
-[![asciicast](https://asciinema.org/a/rZ0MTSgwIkQcuK1jEfgtRDHWq.svg)](https://asciinema.org/a/rZ0MTSgwIkQcuK1jEfgtRDHWq)
+[![asciicast](https://asciinema.org/a/IyD2xpSESAt61qCgrSRdwiWLz.svg)](https://asciinema.org/a/IyD2xpSESAt61qCgrSRdwiWLz)
 ##
 ### Links
 

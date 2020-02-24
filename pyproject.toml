@@ -1,14 +1,16 @@
 [tool.poetry]
 name = "drowsycoder_brain_games"
-version = "0.5.0"
+version = "0.6.0"
 description = "The Brain Games project (Hexlet)"
+repository = "https://github.com/drowsycoder/python-project-lvl1"
+classifiers = ["Topic :: Games/Entertainment :: Puzzle Games"]
 authors = ["drowsycoder <drowsycoon@gmail.com>"]
 packages = [
   { include = "brain_games" },
 ]
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain-games = "brain_games.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"

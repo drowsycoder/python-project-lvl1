@@ -1,4 +1,5 @@
 install:
+	chmod +x brain_games/scripts/brain_games.py
 	poetry install
 
 lint:

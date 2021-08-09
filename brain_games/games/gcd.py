@@ -4,6 +4,9 @@ from random import randint
 
 RULES = 'Find the greatest common divisor of given numbers.'
 
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+
 
 def calculate_gcd(num1, num2):
     """Calculate the greatest common divisor (GCD) of given numbers.
@@ -30,8 +33,8 @@ def provide_game_round_data():
         problem: Expression to solve.
         answer: Expected answer.
     """
-    num1 = randint(1, 100)
-    num2 = randint(1, 100)
+    num1 = randint(MIN_NUMBER, MAX_NUMBER)
+    num2 = randint(MIN_NUMBER, MAX_NUMBER)
 
     problem = '{num1} {num2}'.format(num1=num1, num2=num2)
     answer = str(calculate_gcd(num1, num2))

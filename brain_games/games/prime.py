@@ -4,6 +4,9 @@ from random import randint
 
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+MIN_NUMBER = 2
+MAX_NUMBER = 100
+
 
 def is_prime(prime_num_candidate):
     """Return True if the number is prime else False.
@@ -27,13 +30,13 @@ def is_prime(prime_num_candidate):
 def provide_game_round_data():
     """Provide a problem (number) and an expected answer (is it prime).
 
-    Function uses a random integer number in a (2, 100) range.
+    Function uses a random integer number in a range defined with constants.
 
     Returns:
         problem: Number.
         answer: Expected answer (is a number prime or not).
     """
-    number = randint(2, 100)
+    number = randint(MIN_NUMBER, MAX_NUMBER)
     problem = str(number)
     answer = 'yes' if is_prime(number) else 'no'
 

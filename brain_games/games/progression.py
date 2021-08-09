@@ -4,21 +4,20 @@ import random
 
 RULES = 'What number is missing in the progression?'
 
+N_ELEMENTS = 10
+MAX_FIRST_NUMBER = 10
+MAX_PROGRESSION_STEP = 10
 
-def ar_progression(n_elements=10, max_first=10, max_step=10):
+
+def ar_progression():
     """Generate arithmetical progression.
-
-    Args:
-        n_elements: N elements of a problem progression.
-        max_first: Max value of the first element.
-        max_step: Max value of a step between elements.
 
     Returns:
         Resulting arithmetical progression.
     """
-    first_number = random.randint(1, max_first)
-    step = random.randint(1, max_step)
-    return [first_number + step * count for count in range(n_elements)]
+    first_number = random.randint(1, MAX_FIRST_NUMBER)
+    step = random.randint(1, MAX_PROGRESSION_STEP)
+    return [first_number + step * count for count in range(N_ELEMENTS)]
 
 
 def provide_game_round_data():

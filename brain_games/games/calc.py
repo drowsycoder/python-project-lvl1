@@ -5,6 +5,9 @@ from random import choice, randint
 
 RULES = 'What is the result of the expression?'
 
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+
 operations = {
     '+': operator.add,
     '-': operator.sub,
@@ -19,8 +22,8 @@ def provide_game_round_data():
         problem: Expression to solve.
         answer: Expected answer.
     """
-    num1 = randint(1, 100)
-    num2 = randint(1, 100)
+    num1 = randint(MIN_NUMBER, MAX_NUMBER)
+    num2 = randint(MIN_NUMBER, MAX_NUMBER)
     operating_symbol = choice(list(operations.keys()))
 
     problem = '{num1} {operating_symbol} {num2}'.format(

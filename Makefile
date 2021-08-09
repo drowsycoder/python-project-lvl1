@@ -14,7 +14,7 @@ build:
 	poetry build
 
 publish:
-	poetry publish
+	poetry publish --build -r testpypi
 
 package-install:
 	python3 -m pip install --user dist/*.whl

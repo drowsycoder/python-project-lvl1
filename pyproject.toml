@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "drowsycoder-hexlet-code-brain-games"
+name = "hexlet-code"
 version = "0.2.5"
 repository = "https://github.com/drowsycoder/python-project-lvl1"
 description = "The Brain Games project (Hexlet)"

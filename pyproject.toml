@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.2.0"
+version = "0.2.1"
 repository = "https://github.com/drowsycoder/python-project-lvl1"
 description = "The Brain Games project (Hexlet)"
 classifiers = ["Topic :: Games/Entertainment :: Puzzle Games"]
@@ -12,6 +12,7 @@ packages = [
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
 brain-even = "brain_games.scripts.brain_even:main"
 
 [tool.poetry.dependencies]

@@ -3,7 +3,6 @@ name = "hexlet-code"
 version = "0.2.5"
 repository = "https://github.com/drowsycoder/python-project-lvl1"
 description = "The Brain Games project (Hexlet)"
-long-description = "The Brain Games project (Hexlet)"
 classifiers = ["Topic :: Games/Entertainment :: Puzzle Games"]
 authors = ["Paul K. <59116077+drowsycoder@users.noreply.github.com>"]
 license = "BSD 3-Clause License"

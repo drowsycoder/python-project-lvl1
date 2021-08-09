@@ -7,8 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-    name: Project testing and publishing
+  tests:
+    name: Testing
 
     runs-on: ubuntu-latest
 
@@ -28,6 +28,18 @@ jobs:
 
       - name: Run linter
         run: make lint
+
+
+  publish:
+    name: Building and publishing
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build a package
+        run: make build
 
       - name: Publish package to TestPyPI
         uses: pypa/gh-action-pypi-publish@release/v1

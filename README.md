@@ -28,4 +28,5 @@ The game set is based on a single engine module and includes 5 game modules:
 | [dillinger](https://dillinger.io/) | "Cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor" |
 | [makefile](https://en.wikipedia.org/wiki/Make_(software)) | "A build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles which specify how to derive the target program" |
 | [poetry](https://poetry.eustace.io/) | "Python dependency management and packaging made easy" |
+| [Test PyPi](https://test.pypi.org/) | "Test Python package publishing with the Test Python Package Index" |
 | [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide) | "The strictest and most opinionated python linter ever" |

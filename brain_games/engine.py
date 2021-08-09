@@ -18,9 +18,9 @@ def provide_user_greeting():
     Returns:
         name: Name of a user (provided as an input value).
     """
-    print('Welcome to the Brain Games!')
+    print('\nWelcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('Hello, {name}!\n'.format(name=name))
+    print('Hello, {name}!'.format(name=name))
     return name
 
 

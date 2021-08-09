@@ -6,7 +6,7 @@
 
 This repository represents a simple math-quiz game set called “Brain Games” as an
 educational project on Hexlet that demands well-engineered project architecture
-and CI/CD. 
+and CI/CD (with automatic tests and publication).
 
 The game set is based on a single engine module and includes 5 game modules:
 

@@ -1,12 +1,12 @@
-## Simple math game set “Brain Games” (educational project for Hexlet)
+## Simple math game set “Brain Games”
 
 [![Actions Status](https://github.com/drowsycoder/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)](https://github.com/drowsycoder/python-project-lvl1/actions)
 [![Actions Status](https://github.com/drowsycoder/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/drowsycoder/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/bca90cd3d69b3c246e45/maintainability)](https://codeclimate.com/github/drowsycoder/python-project-lvl1/maintainability)
 
-This repository represents a simple math-quiz game set called “Brain Games” as an
-educational project on Hexlet that demands well-engineered project architecture
-and CI/CD (with automatic tests and publication).
+This repository represents a simple math-quiz game set called “Brain Games” as
+an educational project on Hexlet that demands well-engineered project
+architecture and CI/CD (with automatic tests and publication).
 
 The game set is based on a single engine module and includes 5 game modules:
 

@@ -1,5 +1,10 @@
 install:
 	chmod +x brain_games/scripts/brain_games.py
+	chmod +x brain_games/scripts/brain_calc.py
+	chmod +x brain_games/scripts/brain_even.py
+	chmod +x brain_games/scripts/brain_gcd.py
+	chmod +x brain_games/scripts/brain_prime.py
+	chmod +x brain_games/scripts/brain_progression.py
 	poetry install
 
 lint:

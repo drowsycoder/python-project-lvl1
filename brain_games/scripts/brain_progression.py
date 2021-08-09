@@ -1,4 +1,4 @@
-# !/usr/bin/env python
+#!/usr/bin/env python
 
 """Script that runs a game ('What number is missing in the progression')."""
 

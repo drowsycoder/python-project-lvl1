@@ -1,4 +1,4 @@
-# !/usr/bin/env python
+#!/usr/bin/env python
 
 """Script that runs a game ('Whether a number is even or not')."""
 

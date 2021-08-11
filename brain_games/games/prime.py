@@ -2,7 +2,7 @@
 
 from random import randint
 
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES_HEADLINE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 MIN_NUMBER = 2
 MAX_NUMBER = 100

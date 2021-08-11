@@ -3,12 +3,12 @@
 import prompt
 
 
-def run(game_type=None, total_problems=3):
+def run(game_type=None, total_problems_count=3):
     """Provide a universal engine for a selected game.
 
     Args:
         game_type: Type of a selected game.
-        total_problems: Quantity of problems to solve per game.
+        total_problems_count: Quantity of problems to solve per game.
     """
     if game_type is None:
         return
@@ -16,10 +16,10 @@ def run(game_type=None, total_problems=3):
     print('\nWelcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {name}!'.format(name=name))
-    print('{rules}\n'.format(rules=game_type.RULES))
+    print('{rules_headline}\n'.format(rules_headline=game_type.RULES_HEADLINE))
 
-    correct_answers = 0
-    while correct_answers < total_problems:
+    correct_answers_count = 0
+    while correct_answers_count < total_problems_count:
         problem, correct_answer = game_type.provide_game_round_data()
         print('Question: {problem}'.format(problem=problem))
         user_answer = prompt.string(prompt='Your answer: ').strip().lower()
@@ -31,6 +31,6 @@ def run(game_type=None, total_problems=3):
             print("Let's try again, {name}!".format(name=name))
             return
         print('Correct!')
-        correct_answers += 1
+        correct_answers_count += 1
 
     print('Congratulations, {name}!'.format(name=name))

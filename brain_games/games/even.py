@@ -2,7 +2,7 @@
 
 from random import randint
 
-RULES = 'Answer "yes" if number is even otherwise answer "no".'
+RULES_HEADLINE = 'Answer "yes" if number is even otherwise answer "no".'
 
 MIN_NUMBER = 1
 MAX_NUMBER = 100

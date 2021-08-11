@@ -3,16 +3,13 @@
 import prompt
 
 
-def run(game_type=None, total_problems_count=3):
+def run(game_type, total_problems_count=3):
     """Provide a universal engine for a selected game.
 
     Args:
         game_type: Type of a selected game.
         total_problems_count: Quantity of problems to solve per game.
     """
-    if game_type is None:
-        return
-
     print('\nWelcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {name}!'.format(name=name))

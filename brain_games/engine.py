@@ -1,7 +1,6 @@
 """Universal engine module for all games."""
 
 import prompt
-from brain_games.cli import welcome_user
 
 
 def provide_game_info(game_type):
@@ -23,10 +22,12 @@ def run(game_type=None, total_problems=3):
     if game_type is None:
         return
 
-    name = welcome_user()
-    provide_game_info(game_type)
-    correct_answers = 0
+    print('\nWelcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print('Hello, {name}!'.format(name=name))
+    print('{rules}\n'.format(rules=game_type.RULES))
 
+    correct_answers = 0
     while correct_answers < total_problems:
         problem, correct_answer = game_type.provide_game_round_data()
         print('Question: {problem}'.format(problem=problem))

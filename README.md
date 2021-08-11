@@ -18,7 +18,11 @@ The game set is based on a single engine module and includes 5 game modules:
 
 ### Installation and usage
 
-| Script name | Short name (in pyproject.toml) | Corresponding game |
+Example of usage:
+
+[![asciicast](https://asciinema.org/a/rZ0MTSgwIkQcuK1jEfgtRDHWq.svg)](https://asciinema.org/a/rZ0MTSgwIkQcuK1jEfgtRDHWq)
+
+| Script name | Short name (as defined in pyproject.toml) | Corresponding game |
 | ------ | ------ | ------ |
 |brain_calc.py|brain-calc|Calc game|
 |brain_even.py|brain-even|Even game|
@@ -26,10 +30,6 @@ The game set is based on a single engine module and includes 5 game modules:
 |brain_prime.py|brain-prime|Prime game|
 |brain_progression.py|brain-progression|Progression game|
 |brain_games.py|brain-games|Basic script|
-
-####Example of usage:
-
-[![asciicast](https://asciinema.org/a/rZ0MTSgwIkQcuK1jEfgtRDHWq.svg)](https://asciinema.org/a/rZ0MTSgwIkQcuK1jEfgtRDHWq)
 
 ### Technologies and tools
 

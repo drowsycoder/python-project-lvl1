@@ -3,15 +3,6 @@
 import prompt
 
 
-def provide_game_info(game_type):
-    """Print information and rules for a selected game.
-
-    Args:
-        game_type: Type of a selected game.
-    """
-    print('{rules}\n'.format(rules=game_type.RULES))
-
-
 def run(game_type=None, total_problems=3):
     """Provide a universal engine for a selected game.
 

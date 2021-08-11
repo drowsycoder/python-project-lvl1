@@ -29,8 +29,8 @@ def provide_game_round_data():
     """
     progression = list(map(str, arithmetical_progression()))
     missed_element_index = random.randint(1, len(progression)) - 1
-    missed_element = progression[missed_element_index]
     progression[missed_element_index] = '..'
-    progression_line = ' '.join(progression)
+    problem = ' '.join(progression)
+    answer = progression[missed_element_index]
 
-    return progression_line, missed_element
+    return problem, answer

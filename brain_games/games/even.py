@@ -16,5 +16,6 @@ def provide_game_round_data():
         answer: Expected answer.
     """
     number = randint(MIN_NUMBER, MAX_NUMBER)
+    problem = str(number)
     answer = 'no' if number % 2 else 'yes'
-    return str(number), answer
+    return problem, answer

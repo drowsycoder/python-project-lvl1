@@ -5,7 +5,9 @@ import random
 RULES_HEADLINE = 'What number is missing in the progression?'
 
 ELEMENTS_COUNT = 10
+MIN_FIRST_NUMBER = 1
 MAX_FIRST_NUMBER = 10
+MIN_PROGRESSION_STEP = 1
 MAX_PROGRESSION_STEP = 10
 
 
@@ -15,8 +17,8 @@ def generate_arithmetical_progression():
     Returns:
         Resulting arithmetical progression.
     """
-    first_number = random.randint(1, MAX_FIRST_NUMBER)
-    step = random.randint(1, MAX_PROGRESSION_STEP)
+    first_number = random.randint(MIN_FIRST_NUMBER, MAX_FIRST_NUMBER)
+    step = random.randint(MIN_PROGRESSION_STEP, MAX_PROGRESSION_STEP)
     return [first_number + step * count for count in range(ELEMENTS_COUNT)]
 
 

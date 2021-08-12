@@ -6,7 +6,7 @@ import prompt
 
 
 def main():
-    """Basic logic that provides greeting function."""
+    """Provide greeting for game set."""
     print('\nWelcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {name}!'.format(name=name))

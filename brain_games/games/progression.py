@@ -9,7 +9,7 @@ MAX_FIRST_NUMBER = 10
 MAX_PROGRESSION_STEP = 10
 
 
-def arithmetical_progression():
+def generate_arithmetical_progression():
     """Generate arithmetical progression.
 
     Returns:
@@ -27,7 +27,7 @@ def provide_game_round_data():
         progression_line: Problem (arithmetical progression).
         missed_element: Expected answer (missed element).
     """
-    progression = list(map(str, arithmetical_progression()))
+    progression = list(map(str, generate_arithmetical_progression()))
     missed_element_index = random.randint(1, len(progression)) - 1
     answer = progression[missed_element_index]
     progression[missed_element_index] = '..'

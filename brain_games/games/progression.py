@@ -4,22 +4,25 @@ import random
 
 RULES_HEADLINE = 'What number is missing in the progression?'
 
-ELEMENTS_COUNT = 10
+ELEMENTS_QUANTITY = 10
 MIN_FIRST_NUMBER = 1
 MAX_FIRST_NUMBER = 10
 MIN_PROGRESSION_STEP = 1
 MAX_PROGRESSION_STEP = 10
 
 
-def generate_arithmetical_progression():
+def make_arithmetical_progression(elements_quantity, first_number, step):
     """Generate arithmetical progression.
+
+    Args:
+        elements_quantity: Quantity of progression elements.
+        first_number: First number in a progression.
+        step: Step between numbers in a progression.
 
     Returns:
         Resulting arithmetical progression.
     """
-    first_number = random.randint(MIN_FIRST_NUMBER, MAX_FIRST_NUMBER)
-    step = random.randint(MIN_PROGRESSION_STEP, MAX_PROGRESSION_STEP)
-    return [first_number + step * count for count in range(ELEMENTS_COUNT)]
+    return [first_number + step * count for count in range(elements_quantity)]
 
 
 def provide_game_round_data():
@@ -29,10 +32,15 @@ def provide_game_round_data():
         progression_line: Problem (arithmetical progression).
         missed_element: Expected answer (missed element).
     """
-    progression = list(map(str, generate_arithmetical_progression()))
+    progression = make_arithmetical_progression(
+        elements_quantity=ELEMENTS_QUANTITY,
+        first_number=random.randint(MIN_FIRST_NUMBER, MAX_FIRST_NUMBER),
+        step=random.randint(MIN_PROGRESSION_STEP, MAX_PROGRESSION_STEP),
+    )
     missed_element_index = random.randint(1, len(progression)) - 1
-    answer = progression[missed_element_index]
-    progression[missed_element_index] = '..'
-    problem = ' '.join(progression)
+    progression_as_text = list(map(str, progression))
+    answer = progression_as_text[missed_element_index]
+    progression_as_text[missed_element_index] = '..'
+    problem = ' '.join(progression_as_text)
 
     return problem, answer
